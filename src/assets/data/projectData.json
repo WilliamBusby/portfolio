@@ -1,0 +1,12 @@
+{
+  "projects": [
+    {
+      "name": "Minesweeper",
+      "description": "A basic copy of the game Minesweeper with full functionality and customisable grid sizes. Created using HTML and Javascript.",
+      "githubUrl": "",
+      "websiteUrl": "",
+      "imageUrl": "",
+      "altText": ""
+    }
+  ]
+}

@@ -1,0 +1,10 @@
+// Functions
+
+@function multiple-box-shadows($n, $colour, $maxSize) {
+  
+  $value: '#{random($maxSize)}px #{random($maxSize)}px #{$colour}';
+  @for $i from 2 through $n {
+    $value: '#{$value} , #{random($maxSize)}px #{random($maxSize)}px #{$colour}';
+  }
+  @return unquote($value);
+}

@@ -1,0 +1,74 @@
+// Mixins
+
+@mixin keyframes($name) {
+  @keyframes #{$name} {
+    @content;
+  }
+}
+
+@mixin starInfo($size, $time) {
+  width: $size;
+  height: $size;
+  background: transparent;
+  animation: animStar $time linear infinite;
+  z-index: 1;
+}
+
+@mixin starAfter($size) {
+  width: $size;
+  height: $size;
+  background: transparent;
+  content: " ";
+  position: absolute;
+  top: (--top-height-after);
+}
+
+@mixin anchor() {
+  color: $text-primary-colour;
+  text-align: center;
+
+  &:hover {
+    color: $anchor-hover-colour;
+    cursor: pointer;
+    text-decoration: underline;
+  }
+}
+
+@mixin flexSpaceBetween() {
+  display: flex;
+  justify-content: space-between;
+}
+
+@mixin primaryText() {
+  color: $text-primary-colour;
+  font-family: $heading-font;
+}
+
+@mixin secondaryText() {
+  color: $text-primary-colour;
+  font-family: $secondary-font;
+}
+
+@mixin borderTopBorder($width, $margin-left) {
+  border-top: $basic-border-design-1px;
+  width: $width;
+  margin-left: $margin-left;
+}
+
+@mixin heading($font-one-size, $font-two-size, $font-three-size) {
+  @include primaryText();
+  font-size: $font-one-size;
+}
+
+@mixin mainText($font-one-size, $font-two-size, $font-three-size) {
+  @include secondaryText();
+  font-size: $font-one-size;
+
+  @media screen and (min-width: 992px) {
+    font-size: $font-two-size;
+  }
+
+  @media screen and (min-width: 660px) {
+    font-size: $font-three-size;
+  }
+}
