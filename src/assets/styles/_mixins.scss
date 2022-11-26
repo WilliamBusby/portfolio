@@ -55,20 +55,28 @@
   margin-left: $margin-left;
 }
 
-@mixin heading($font-one-size, $font-two-size, $font-three-size) {
+@mixin heading($desktop-font, $tablet-font, $phone-font) {
   @include primaryText();
-  font-size: $font-one-size;
-}
+  font-size: $desktop-font;
 
-@mixin mainText($font-one-size, $font-two-size, $font-three-size) {
-  @include secondaryText();
-  font-size: $font-one-size;
-
-  @media screen and (min-width: 992px) {
-    font-size: $font-two-size;
+  @media screen and (max-width: 992px) {
+    font-size: $tablet-font;
   }
 
-  @media screen and (min-width: 660px) {
-    font-size: $font-three-size;
+  @media screen and (max-width: 660px) {
+    font-size: $phone-font;
+  }
+}
+
+@mixin mainText($desktop-font, $tablet-font, $phone-font) {
+  @include secondaryText();
+  font-size: $desktop-font;
+
+  @media screen and (max-width: 992px) {
+    font-size: $tablet-font;
+  }
+
+  @media screen and (max-width: 660px) {
+    font-size: $phone-font;
   }
 }

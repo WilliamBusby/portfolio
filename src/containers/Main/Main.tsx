@@ -1,9 +1,19 @@
+import HeaderContainer from '../HeaderContainer/HeaderContainer';
 import './Main.scss';
+import { MainProps } from '@/assets/interfaces/MainProps';
+import AboutMe from '../../components/AboutMe/AboutMe';
+import ContactMe from '../../components/ContactMe/ContactMe';
+import ProjectContainer from '../ProjectContainer/ProjectContainer';
 
-const Main = (props) => {
+const Main = (props: MainProps) => {
+
+  const availableContent = [null, <ProjectContainer />, <AboutMe />, <ContactMe />] 
 
   return (
-    <div>Main</div>
+    <div className = "main">
+      <HeaderContainer />
+      {availableContent[props.chosenNavItem]}
+    </div>
   )
 }
 

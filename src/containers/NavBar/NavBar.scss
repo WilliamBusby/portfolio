@@ -1,0 +1,26 @@
+@import "../../assets/styles/styles";
+
+.nav {
+  height: 10%;
+}
+
+.nav-bar {
+
+  display: flex;
+  flex-direction: row;
+  // justify-content: space-between;
+  width: 100%;
+
+  li {
+    list-style-type: none;
+  }
+
+  > :nth-child(-n+3) {
+    border-right: $navbar-border-right-5px;
+  }
+
+  &__anchor {
+    @include anchor();
+    @include primaryText();
+  }
+}

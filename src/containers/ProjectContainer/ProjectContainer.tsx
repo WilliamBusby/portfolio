@@ -2,10 +2,10 @@ import './ProjectContainer.scss';
 
 const ProjectContainer = (props) => {
 
-  
+  // Read the assets/data file
 
   return (
-    <div>ProjectContainer</div>
+    <div className="project-container">ProjectContainer</div>
   )
 }
 

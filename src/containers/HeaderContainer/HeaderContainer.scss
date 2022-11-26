@@ -1,0 +1,19 @@
+@import "../../assets/styles/styles";
+
+.header-container {
+  
+  display: flex;
+  flex-direction: column;
+
+  padding: 450px 0 192px 192px;
+  bottom: 0;
+  position: relative;
+
+  &__header {
+    @include heading(96px, 18px, 12px);
+  }
+
+  &__subheader {
+    @include mainText(48px, 18px, 12px);
+  }
+}
