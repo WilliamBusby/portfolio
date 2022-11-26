@@ -3,7 +3,9 @@ import './AboutMe.scss';
 const AboutMe = (props) => {
 
   return (
-    <div>AboutMe</div>
+    <div className='about-me'>
+      <h4 className="about-me__header"></h4>
+    </div>
   )
 }
 

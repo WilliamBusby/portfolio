@@ -1,9 +1,10 @@
+import { ProjectContainerItemProps } from '../../assets/interfaces/ProjectContainerItemProps';
 import './ProjectContainerItem.scss';
 
-const ProjectContainerItem = (props) => {
+const ProjectContainerItem = (props: ProjectContainerItemProps) => {
 
   return (
-    <div>ProjectContainerItem</div>
+    <div onClick={() => props.setProjectCardInfo(props.index)}>{props.project.name}</div>
   )
 }
 
