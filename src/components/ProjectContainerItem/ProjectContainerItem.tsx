@@ -4,7 +4,7 @@ import './ProjectContainerItem.scss';
 const ProjectContainerItem = (props: ProjectContainerItemProps) => {
 
   return (
-    <div onClick={() => props.setProjectCardInfo(props.index)}>{props.project.name}</div>
+    <div className="project-container-item" onClick={() => props.setProjectCardInfo(props.index)}>{props.project.name}</div>
   )
 }
 

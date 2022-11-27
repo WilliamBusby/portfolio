@@ -1,0 +1,30 @@
+@import "../../assets/styles/styles";
+
+.background-stars {
+
+  position: relative;
+
+  #small-stars {
+    @include starInfo(1px, 20s);
+    box-shadow: multiple-box-shadows(4000, $star-three-colour, $star-max-value);
+    &:after {
+      @include starAfter(1px);
+    }
+  }
+
+  #medium-stars {
+    @include starInfo(2px, 60s);
+    box-shadow: multiple-box-shadows(2000, $star-two-colour, $star-max-value);
+    &:after {
+      @include starAfter(2px);
+    }
+  }
+
+  #big-stars {
+    @include starInfo(4px, 120s);
+    box-shadow: multiple-box-shadows(1000, $star-one-colour, $star-max-value);
+    &:after {
+      @include starAfter(4px);
+    }
+  }
+}

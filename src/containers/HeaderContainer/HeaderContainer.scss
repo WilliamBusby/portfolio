@@ -8,10 +8,12 @@
   padding: 0 0 192px 192px;
 
   &__header {
-    @include heading(96px, 18px, 12px);
+    @include mediaScreenFont(96px, 18px, 12px);
+    @include primaryFontText();
   }
 
   &__subheader {
-    @include mainText(48px, 18px, 12px);
+    @include mediaScreenFont(48px, 18px, 12px);
+    @include secondaryFontText();
   }
 }

@@ -1,1 +1,9 @@
 @import "../../assets/styles/styles";
+
+.project-container {
+  @include mainContent();
+
+  &__header {
+    @include mainContentSubheader();
+  }
+}

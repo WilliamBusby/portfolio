@@ -1,5 +1,7 @@
 // Functions
 
+@import "./variables";
+
 @function multiple-box-shadows($n, $colour, $maxSize) {
   
   $value: '#{random($maxSize)}px #{random($maxSize)}px #{$colour}';

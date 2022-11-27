@@ -1,16 +1,18 @@
 @import "../../assets/styles/styles";
 
 .contact-me {
-
+  @include mainContent();
   display: flex;
   flex-direction: column;
   
   &__header {
-    @include heading(32px, 24px, 16px)
+    @include mainContentSubheader();
   }
 
   &__content {
-    @include mainText(24px, 16px, 12px)
+    @include mediaScreenFont(24px, 16px, 12px);
+    @include secondaryFontText();
+    padding-bottom: 20px;
   }
 
   &__list {
@@ -24,6 +26,8 @@
   }
 
   &__link > a {
-    @include anchor(48px, 40px, 32px)
+    @include anchor();
+    @include mediaScreenFont(96px, 72px, 48px);
+    @include secondaryFontText();
   }
 }

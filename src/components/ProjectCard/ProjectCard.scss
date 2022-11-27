@@ -4,12 +4,14 @@
   padding: 25px 0 0 0;
   margin-left: 192px;
   height: 450px;
+  width: 70%;
 
   &__exists {
     border-bottom: $basic-border-design-1px;
   }
 
   &__name {
-    @include mainText(32px, 18px, 16px)
+    @include mediaScreenFont(32px, 18px, 16px);
+    @include secondaryFontText();
   }
 }

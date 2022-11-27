@@ -1,0 +1,14 @@
+@import "../../assets/styles/styles";
+
+.about-me {
+  @include mainContent();
+
+  &__header {
+    @include mainContentSubheader();
+  }
+
+  &__content {
+    @include secondaryFontText();
+    @include mediaScreenFont(24px, 20px, 16px);
+  }
+}

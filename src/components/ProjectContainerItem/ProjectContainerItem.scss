@@ -1,0 +1,12 @@
+@import "../../assets/styles/styles";
+
+.project-container-item {
+  @include mediaScreenFont(24px, 16px, 12px);
+  @include secondaryFontText();
+
+  text-align: left;
+  padding: 0 0 0 10%;
+  width: auto;
+
+  @include anchor();
+}
