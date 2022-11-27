@@ -11,7 +11,7 @@ const ProjectCard = (props: ProjectCardProps) => {
   }
 
   return (
-    <div className='project-card'>
+    <div className='project-card__exists project-card'>
       <h5 className='project-card__name'>{props.project.name}</h5>
       <img className='project-card__img' src={props.project.imageUrl} alt={props.project.altText} />
       <a className='project-card__link' href={props.project.githubUrl}><FontAwesomeIcon icon={faGithub} /></a>

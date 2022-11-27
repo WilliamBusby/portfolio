@@ -23,14 +23,25 @@
   top: (--top-height-after);
 }
 
-@mixin anchor() {
+@mixin anchor($desktop-font, $tablet-font, $phone-font) {
   color: $text-primary-colour;
   text-align: center;
+  text-decoration: none;
 
   &:hover {
     color: $anchor-hover-colour;
     cursor: pointer;
     text-decoration: underline;
+  }
+
+  font-size: $desktop-font;
+
+  @media screen and (max-width: 992px) {
+    font-size: $tablet-font;
+  }
+
+  @media screen and (max-width: 660px) {
+    font-size: $phone-font;
   }
 }
 

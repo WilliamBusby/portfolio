@@ -1,0 +1,29 @@
+@import "../../assets/styles/styles";
+
+.contact-me {
+
+  display: flex;
+  flex-direction: column;
+  
+  &__header {
+    @include heading(32px, 24px, 16px)
+  }
+
+  &__content {
+    @include mainText(24px, 16px, 12px)
+  }
+
+  &__list {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+  }
+
+  &__link {
+    list-style: none;
+  }
+
+  &__link > a {
+    @include anchor(48px, 40px, 32px)
+  }
+}

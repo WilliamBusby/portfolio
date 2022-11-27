@@ -5,14 +5,14 @@ import AboutMe from '../../components/AboutMe/AboutMe';
 import ContactMe from '../../components/ContactMe/ContactMe';
 import ProjectContainer from '../ProjectContainer/ProjectContainer';
 import ProjectCard from '../../components/ProjectCard/ProjectCard';
-import { useState } from 'react';
+import { useEffect, useState } from 'react';
 import { Project } from '@/assets/interfaces/Project';
 
 const Main = (props: MainProps) => {
 
   let [projectCardInfo, setProjectCardInfo] = useState<Project | null>(null);
 
-  const availableContent = [null, <ProjectContainer setProjectCardInfo={setProjectCardInfo}/>, <AboutMe />, <ContactMe />] 
+  const availableContent = [null, <ProjectContainer setProjectCardInfo={setProjectCardInfo}/>, <AboutMe setProjectCardInfo={setProjectCardInfo} />, <ContactMe setProjectCardInfo={setProjectCardInfo} />];
 
   return (
     <div className = "main">
