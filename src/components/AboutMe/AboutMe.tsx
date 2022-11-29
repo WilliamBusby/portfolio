@@ -11,7 +11,7 @@ const AboutMe = (props: ProjectContainerProps) => {
   return (
     <div className='about-me'>
       <h4 className="about-me__header">ABOUT ME</h4>
-      <p className='about-me__content'>Hi there, I'm William, a junior software engineer based in the Sussex countryside currently training with _nology. I'm always looking for new ways to develop myself both technically and personally. If you've liked what you've seen here so far, send me a message using the methods below!</p>
+      <p className='about-me__content'>Hi there, I'm William Busby. <br/> A junior software engineer based in the Sussex countryside currently working for _Nology. <br/>I'm always looking for new ways to develop myself both technically and personally. </p>
     </div>
   )
 }
