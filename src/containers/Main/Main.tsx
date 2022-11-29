@@ -17,7 +17,7 @@ const Main = (props: MainProps) => {
   return (
     <div className = "main">
       <div>
-        <ProjectCard project={projectCardInfo}/>
+        {/* <ProjectCard project={projectCardInfo}/> */}
         <HeaderContainer />
       </div>
       {availableContent[props.chosenNavItem]}

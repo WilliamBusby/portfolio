@@ -12,11 +12,13 @@ const ProjectCard = (props: ProjectCardProps) => {
 
   return (
     <div className='project-card__exists project-card'>
-      <h5 className='project-card__name'>{props.project.name}</h5>
-      <img className='project-card__img' src={props.project.imageUrl} alt={props.project.altText} />
-      <a className='project-card__link' href={props.project.githubUrl}><FontAwesomeIcon icon={faGithub} /></a>
-      <a className='project-card__link' href={props.project.websiteUrl}><FontAwesomeIcon icon={faLink} /></a> 
+      <div className='project-card__name_and_links'>
+        <h5 className='project-card__name'>{props.project.name}</h5>
+        <a className='project-card__link project-card__github' href={props.project.githubUrl}><FontAwesomeIcon icon={faGithub} /></a>
+        <a className='project-card__link project-card__website' href={props.project.websiteUrl}><FontAwesomeIcon icon={faLink} /></a> 
+      </div>
       <p className='project-card__desc'>{props.project.description}</p>
+      <img className='project-card__img' src={props.project.imageUrl} alt={props.project.altText} />
     </div>
   )
 }

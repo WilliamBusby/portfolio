@@ -6,7 +6,6 @@
 }
 
 .nav-bar {
-
   display: flex;
   flex-direction: row;
   justify-content: space-evenly;
@@ -14,6 +13,7 @@
   height: 100%;
   margin: auto;
   padding-top: 40px;
+  z-index: 2;
 
   > :nth-child(-n+3) {
     border-right: $navbar-border-right-3px;

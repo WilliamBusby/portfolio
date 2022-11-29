@@ -5,7 +5,7 @@
   display: flex;
   flex-direction: column;
 
-  padding: 0 0 192px 192px;
+  padding: 500px 0 0 192px;
 
   &__header {
     @include mediaScreenFont(96px, 18px, 12px);
