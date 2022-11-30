@@ -18,7 +18,7 @@ const NavBar = (props: NavBarProps) => {
       <ul className='nav-bar'>
         {navComponents}
         <li className='nav-bar__anchor'>
-          <a href="https://storage.googleapis.com/portfolio-resume/William_Busby_CV_2022.pdf" target="_blank" title="Resume PDF">RESUME</a>
+          <a href="https://storage.googleapis.com/portfolio-resume/William_Busby_CV_2022.pdf" target="_blank" rel="noreferrer" title="Resume PDF">RESUME</a>
         </li>
       </ul>
     </nav>
