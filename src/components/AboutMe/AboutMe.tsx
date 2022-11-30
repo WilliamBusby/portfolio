@@ -1,12 +1,6 @@
-import { useEffect } from 'react';
-import { ProjectContainerProps } from '../../assets/interfaces/ProjectContainerProps';
 import './AboutMe.scss';
 
-const AboutMe = (props: ProjectContainerProps) => {
-
-  useEffect(() => {
-    props.setProjectCardInfo(null);
-  }, [])
+const AboutMe = () => {
 
   return (
     <div className='about-me'>

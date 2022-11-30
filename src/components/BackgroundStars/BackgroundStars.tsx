@@ -1,6 +1,6 @@
 import './BackgroundStars.scss';
 
-const BackgroundStars = (props) => {
+const BackgroundStars = () => {
 
   return (
     <div className='background-stars'>

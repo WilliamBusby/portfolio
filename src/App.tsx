@@ -8,10 +8,6 @@ function App() {
 
   let [chosenNavItem, setChosenNavItem] = useState<number>(0);
 
-  // const handleChosenNavItem = (chosenHeader: number) => {
-  //   setChosenNavItem(chosenHeader);
-  // };
-
   return (
     <div className="App">
       <NavBar handleChosenNavItem={setChosenNavItem} />

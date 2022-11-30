@@ -14,8 +14,8 @@ const ProjectCard = (props: ProjectCardProps) => {
     <div className='project-card__exists project-card'>
       <div className='project-card__name_and_links'>
         <h5 className='project-card__name'>{props.project.name}</h5>
-        <a className='project-card__link project-card__github' href={props.project.githubUrl}><FontAwesomeIcon icon={faGithub} /></a>
-        <a className='project-card__link project-card__website' href={props.project.websiteUrl}><FontAwesomeIcon icon={faLink} /></a> 
+        <a className='project-card__link project-card__github' href={props.project.githubUrl} target="_blank" rel="noreferrer" title="GitHub Repository"><FontAwesomeIcon icon={faGithub} /></a>
+        <a className='project-card__link project-card__website' href={props.project.websiteUrl} target="_blank" rel="noreferrer" title="Deployed Website"><FontAwesomeIcon icon={faLink} /></a> 
       </div>
       <p className='project-card__desc'>{props.project.description}</p>
       <img className='project-card__img' src={props.project.imageUrl} alt={props.project.altText} />

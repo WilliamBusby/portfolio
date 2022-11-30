@@ -1,6 +1,6 @@
 import './HeaderContainer.scss';
 
-const HeaderContainer = (props) => {
+const HeaderContainer = () => {
 
   return (
     <div className='header-container'>

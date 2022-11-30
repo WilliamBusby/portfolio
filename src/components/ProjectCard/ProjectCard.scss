@@ -14,11 +14,9 @@
 
   &__name_and_links {
     display: grid;
-    width: 400px;
     align-items: center;
     text-align: left;
     grid-template-columns: 5fr 1fr 1fr;
-    justify-content: space-evenly;
   }
 
   &__name {
@@ -35,14 +33,16 @@
   &__desc {
     @include mediaScreenFont(18px, 16px, 14px);
     @include secondaryFontText();
-    text-align: center;
     min-height: 70px;
   }
 
   &__img {
-    width: 400px;
     height: 200px;
     border: $basic-border-design-1px;
     z-index: 2;
+  }
+
+  &__img, &__name_and_links {
+    width: 400px;
   }
 }

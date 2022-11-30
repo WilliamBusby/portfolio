@@ -1,11 +1,10 @@
 import './ProjectContainer.scss';
 import ProjectContainerItem from '../../components/ProjectContainerItem/ProjectContainerItem';
-import { ProjectContainerProps } from '@/assets/interfaces/ProjectContainerProps';
 import { useEffect, useState } from 'react';
 import { Project } from '@/assets/interfaces/Project';
 import ProjectCard from '../../components/ProjectCard/ProjectCard';
 
-const ProjectContainer = (props: ProjectContainerProps) => {
+const ProjectContainer = () => {
 
   let [projectsList, setProjectsList] = useState<Array<Project>>([]);
   let [project, setProject] = useState<Project | null>(null);
@@ -21,7 +20,6 @@ const ProjectContainer = (props: ProjectContainerProps) => {
   }, []);
 
   const handleSetProjectCardInfo = (index: number) => {
-    props.setProjectCardInfo(projectsList[index]);
     setProject(projectsList[index]);
   }
 
